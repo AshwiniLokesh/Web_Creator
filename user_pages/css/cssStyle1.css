@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body{font-family: "Roboto", sans-serif; background-color: #f1f1f1 }
+
+h1{
+	color: #778899;
+	text-shadow: 1px 1px;
+}
+
+h3,h4,form,#title{
+	color: #778899;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+	border-bottom-style: solid;
+	border-bottom-color: LightGray;
+	border-bottom-width: 2px;
+}
+
+.row{
+	height: 400pt;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+	height: 350pt;
+    padding: 15px;
+}
+
+/* Style for form div */
+div#control{
+	width: 60%;
+	height: 95%;
+	padding: 15px;
+	margin: auto;
+	border-style: solid;
+	border-color: LightBlue;
+	border-width: 5px;
+	border-radius: 15px;
+	background-color: AliceBlue;
+	overflow: scroll;
+}
+.form-title{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Style for display div */
+#display{
+	height: 95%;
+	width: 90%;
+	margin: auto;
+	padding: 5px;
+	border-style: solid;
+	border-color: LightBlue;
+	border-width: 5px;
+	border-radius: 15px;
+	overflow: scroll;
+}
+
+#title{
+	font-weight: bold;
+}
+
+/* Styles for different card style options */
+#card-style1, #card-style2, #card-style3{
+	position: relative;
+	height: 315px;
+	width: 550px;
+    margin: 10px auto;
+	padding-left:15px;
+	background-color: white;
+}
+#card-style2, #card-style3{
+	display: none;
+}
+
+/* Style for card style 1 specifically */
+#card-style1 > #company{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 25px;
+}
+#card-style1 > #name{
+	position: absolute;
+	top: 130px;
+	left: 10px;
+	font-size: 20px;	
+}
+#card-style1 > #name > #job-title{
+	font-size: 15px;
+    font-style: italic;	
+}
+#card-style1 > #department{
+	position: absolute;
+	top: 160px;
+	left: 10px;
+	font-size: 15px;	
+}
+#card-style1 > #phone{
+	position: absolute;
+	top: 200px;
+	left: 10px;	
+}
+#card-style1 > #email{
+	position: absolute;
+	top: 220px;
+	left: 10px;	
+}
+#card-style1 > #address{
+	position: absolute;
+	top: 250px;
+	left: 10px;
+	width: 40%;	
+}
+
+/* Style for card style 2 specifically */
+#card-style2 > #name{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	font-size: 25px;	
+}
+#card-style2 > #company{
+	position: absolute;
+	top: 70px;
+	left: 10px;
+	font-size: 20px;	
+}
+#card-style2 > #name > #job-title{
+	font-size: 15px;
+    font-style: italic;	
+}
+#card-style2 > #department{
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	font-size: 20px;	
+}
+#card-style2 > #phone{
+	position: absolute;
+	top: 200px;
+	right: 10px;	
+}
+#card-style2 > #email{
+	position: absolute;
+	top: 220px;
+	right: 10px;	
+}
+#card-style2 > #address{
+	position: absolute;
+	top: 250px;
+	right: 10px;
+	width: 40%;	
+}
+
+/* Style for card style 3 specifically */
+#card-style3 > #company{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	font-size: 25px;
+}
+#card-style3 > #name{
+	position: absolute;
+	top: 70px;
+	left: 10px;
+	font-size: 20px;	
+}
+#card-style3 > #name > #job-title{
+	font-size: 15px;
+    font-style: italic;	
+}
+#card-style3 > #department{
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	font-size: 20px;	
+}
+#card-style3 > #phone{
+	position: absolute;
+	top: 200px;
+	left: 10px;	
+}
+#card-style3 > #email{
+	position: absolute;
+	top: 220px;
+	left: 10px;	
+}
+#card-style3 > #address{
+	position: absolute;
+	text-align: center;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;	
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:800px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+#bottom {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+	border-top-style: solid;
+	border-top-color: LightGray;
+	border-top-width: 2px;
+}
